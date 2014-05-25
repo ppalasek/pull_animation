@@ -24,7 +24,7 @@ for i in xrange(num_frames):
 
     for j in xrange(animation_width / num_frames):
         for k in xrange(animation_height):
-            animation[k][j * num_frames + i] = current_frame[k][j * num_frames]
+            animation[k][j * num_frames + i] = current_frame[k][j * num_frames + i]
 
 #show generated image and save it
 cv2.imshow('animation_image', animation)
